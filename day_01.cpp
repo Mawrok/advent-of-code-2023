@@ -12,7 +12,7 @@ auto calibration_value(std::string str) {
     std::pair<std::size_t, int> first{ std::string::npos, 0 }, last{ 1, 0 };
     for (const auto [i, strdig] : std::views::enumerate(strdigs)) {
         first = std::min({     str. find(strdig), 1 + i % 9 }, first );
-        last =  std::max({ 1 + str.rfind(strdig), 1 + i % 9 }, last  );
+        last  = std::max({ 1 + str.rfind(strdig), 1 + i % 9 }, last  );
     }
     return first.second * 10 + last.second;
 }
