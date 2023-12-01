@@ -7,9 +7,9 @@
 
 auto calibrate(std::string str) {
     static std::vector<std::string> strdigs = {
-        "1", "2", "3", "4", "5", "6", "7", "8", "9",
+        "1", "2", "3", "4", "5", "6", "7", "8", "9"
 #ifdef PART2
-        "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"
+        , "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"
 #endif
     };
 
