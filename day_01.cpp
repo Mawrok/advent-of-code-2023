@@ -19,5 +19,5 @@ auto calibration_value(std::string str) {
 
 int main() {
     std::cout << std::ranges::fold_left(std::views::istream<std::string>(std::cin)
-        | std::views::transform(calibrate), 0, std::plus{});
+        | std::views::transform(calibration_value), 0, std::plus{});
 }
